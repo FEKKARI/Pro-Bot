@@ -846,4 +846,4 @@ j = 1;
 }, ms);    
     
 });
-client.login("process.env.BOT_TOKEN"");  // توكن حقق
+client.login("process.env.BOT_TOKEN"");
