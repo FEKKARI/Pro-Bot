@@ -826,4 +826,24 @@ message.channel.stopTyping()
 })
 }
 });
+
+
+
+client.on('ready', function(){    
+    var ms = 10000 ;    
+    var setGame = ['by SizGooo#4433','+help +invie','X BOT يتمنى لكم قضاء اجمل الاوقات'];    
+    var i = -1;    
+    var j = 0;    
+    setInterval(function (){    
+        if( i == -1 ){    
+j = 1;    
+       }    
+        if( i == (setGame.length)-1 ){    
+            j = -1;    
+      }    
+       i = i+j;    
+        client.user.setGame(setGame[i],`http://www.youtube.com/gg`);    
+}, ms);    
+    
+});
 client.login("process.env.BOT_TOKEN"");  // توكن حقق
